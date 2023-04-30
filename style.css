@@ -1,58 +1,137 @@
 * {
-  margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-html, body {
-  height: 100%;
+.hero {
+  height: 100vh;
   width: 100%;
-}
-
-
-body {
-  color: black;
-  background: url("./web.jpg");
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./A.png);
   background-size: cover;
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  background-position: center;
 }
 
-.my-object {
-  border: 2px solid white;
-  width: 100%;
-  height: 55px;
+nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ea1538;
+  transition: .3s;
 }
 
 button {
-  padding: 15px;
-  border: transparent;
-  text-decoration: none;
-  font-style: none;
-  background-color: transparent;
-}
-
-a {
-  color: black;
-  text-decoration: none;
+  border: none;
+  background: #ea1538;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
 }
 
 button:hover {
-  background-color: black;
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
-
-p {
-color: black;  
+footer {
+  padding: 4rem 1rem;
+  background: #151515;
+  color: #fff;
 }
 
-.myTime {
-  position: absolute;
-  bottom: 0;
+footer a {
+  color: #808080;
+  transition-duration: 100ms;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .ip {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+footer .copyright {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  footer div {
+    text-align: center !important;
+  }
+
+  footer .info {
+    margin-bottom: 1rem;
+  }
+
+  footer .copyright p:last-child {
+    margin-top: 1rem;
+  }
+}
+
+.post-header {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #101010;
+  align-items: center;
+}
+
+.post-header img {
+  max-height: 5rem;
+  margin: 0 1rem;
+  transition-duration: 100ms;
+  filter: grayscale(1);
+}
+
+.body {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-weight: bold;
+  background-size: 20cm;
+}
+
+.mec {
+  margin-bottom: 50px;
+  size: 20cm;
+}
+
+.about {
+  max-width: 700px;
+  margin-left: calc(50% - 350px);
+}
+
+.mail {
+  color: red;
 }
